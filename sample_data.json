@@ -1,0 +1,46 @@
+{
+  "samples": [
+    {
+      "name": "Mixed Types",
+      "data": [1, "two", 3, null, 5],
+      "task": "calculate_average",
+      "expected_result": 3.0,
+      "description": "Basic case with mixed types including strings and null values"
+    },
+    {
+      "name": "All Numbers",
+      "data": [10, 20, 30, 40, 50],
+      "task": "calculate_average",
+      "expected_result": 30.0,
+      "description": "Ideal case with all numeric values"
+    },
+    {
+      "name": "Empty List",
+      "data": [],
+      "task": "calculate_average",
+      "expected_result": "No numeric values",
+      "description": "Edge case with an empty list"
+    },
+    {
+      "name": "No Valid Numbers",
+      "data": ["one", "two", "three", null, false],
+      "task": "calculate_average",
+      "expected_result": "No valid numbers",
+      "description": "Edge case with no valid numeric values"
+    },
+    {
+      "name": "Mixed Numbers with Negative",
+      "data": [10, "large", -5, null, 42, "100"],
+      "task": "find_max",
+      "expected_result": 42,
+      "description": "Finding maximum in a list with mixed types"
+    },
+    {
+      "name": "Complex Types",
+      "data": [1, "two", 3.0, null, true, [1,2], {"a": 1}],
+      "task": "count_by_type",
+      "expected_result": "<class 'int'>: 1, <class 'str'>: 1, <class 'float'>: 1, <class 'NoneType'>: 1, <class 'bool'>: 1, <class 'list'>: 1, <class 'dict'>: 1",
+      "description": "Counting occurrences of each data type"
+    }
+  ]
+} 
